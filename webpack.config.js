@@ -3,8 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
-const TerserWebpackPlugin = require('terser-webpack-plugin');
+// const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
+// const TerserWebpackPlugin = require('terser-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development'; // определение режима разработки
 const isProd = !isDev;
@@ -107,7 +107,7 @@ module.exports = {
     open: true,
     // host: 'localhost', //192.168.88.197 localhost
     // port: 8080,
-    disableHostCheck: true,
-    hot: isDev,
+    // disableHostCheck: true,
+    // hot: isDev,
   },
 };

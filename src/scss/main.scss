@@ -1,0 +1,12 @@
+.main {
+  background: url('../assets/images/back1.svg'), url('../assets/images/back2.svg'), url('../assets/images/back3.svg');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 100%, 20%, 400px;
+  background-position: -4rem -8.5rem, right 65rem, left 65rem;
+}
+
+.container {
+  position: relative;
+  width: 75rem;
+  margin: 0 auto;
+}

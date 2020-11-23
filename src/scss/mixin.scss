@@ -1,0 +1,11 @@
+@mixin color_text {
+  color: #FB4C84;
+}
+
+@mixin pseudo {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
