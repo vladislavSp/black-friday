@@ -1,3 +1,51 @@
+@import './variables.scss';
+
 .banner {
+  display: flex;
+  position: relative;
   margin-bottom: 4.375rem;
+  border-radius: 1rem;
+  padding: 1.875rem;
+
+  background-image: url('../assets/images/banner-1x.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url('../assets/images/banner-2x.jpg');
+  }
+}
+
+.banner__title {
+  font-family: 'DIN Pro';
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+}
+
+.banner__text {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 0.875rem;
+}
+
+.banner__btns {
+  display: flex;
+  align-items: center;
+}
+
+.banner__btn {
+  &:first-child {
+    margin-right: 1.25rem;
+  }
+}
+
+.banner__logo {
+  margin: auto 4rem auto auto;
+  flex-shrink: 0;
 }

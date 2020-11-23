@@ -1,4 +1,36 @@
 .footer {
   padding: 2.5rem 0;
   border-top: 1px solid #1F1F1F;
+
+  display: flex;
+  align-items: flex-start;
+
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.footer__copyright {
+  margin-left: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.5px;
+
+  color: rgba(white, $alpha: 0.5);
+
+  & span {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 0.625rem;
+    }
+  }
+}
+
+.footer__politics {
+  margin-left: auto;
+
+  color: rgba(white, $alpha: 0.5);
 }

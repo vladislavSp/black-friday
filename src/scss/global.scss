@@ -21,10 +21,6 @@ input[type="radio"].visually-hidden {
 * {
   box-sizing: border-box;
 
-  &:focus {
-    outline: 2px solid #FFB800;
-  }
-
   &::before, &::after {
     box-sizing: border-box;
   }

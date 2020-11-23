@@ -12,7 +12,7 @@
 
     <div class="container">
       <header class="header">
-        <img src="/src/assets/images/logo-lh.svg" alt="Лого Лиги Героев">
+        <img src="src/assets/images/logo-lh.svg" alt="Лого Лиги Героев">
       </header>
 
       <section class="first">
@@ -20,7 +20,7 @@
         <h1 class="first__title">3&nbsp;дня <span class="colorized-text">скидок</span> на&nbsp;новый спортивный сезон Лиги Героев</h1>
         <p class="first__text">С 27 по 29 ноября регистрируйся на спортивные приключения наступающего года с максимальной скидкой.</p>
         <picture>
-          <img class="first__image" width="750" src="src/assets/images/girl-min.png" alt="Спортивная девушка">
+          <img class="first__image" width="750" src="src/assets/images/girl-min.png" alt="Скидки на мероприятия">
         </picture>
       </section>
       
@@ -29,8 +29,21 @@
           <h2 class="sale__title">Скидки на события</h2>
           <p class="sale__text">До конца действия предложения осталось:</p>
         </div>
-        <div class="sale__timer">
-          
+        <div class="sale__timer timer">
+          <div class="timer__section">
+            <div class="days_1">0</div>
+            <div class="days_2">0</div>
+          </div>
+          <div class="timer__delimetr">:</div>
+          <div class="timer__section">
+            <div class="hours_1">0</div>
+            <div class="hours_2">0</div>
+          </div>
+          <div class="timer__delimetr">:</div>
+          <div class="timer__section">
+            <div class="minutes_1">0</div>
+            <div class="minutes_2">0</div>
+          </div>
         </div>
       </section>
 
@@ -38,7 +51,27 @@
         <h2 class="activity__title">Скидка <span class="colorized-text">20%</span> на мероприятия:</h2>
         <ul class="activity__list">
           <li class="activity__item">
-            <img class="activity__img" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
+            <img class="activity__img" width="84" height="42" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
+            <b class="activity__subtitle">2 февраля</b>
+            <h3 class="activity__city">Москва</h3>
+            <span class="activity__sale">20% скидка</span>
+            <div class="activity__btns">
+              <button class="btn btn--promo">Промокод: FRIDAY5</button>
+              <a class="btn btn--href" href="/">Принять участие</a>
+            </div>
+          </li>
+          <li class="activity__item activity__item--2">
+            <img class="activity__img" width="84" height="42" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
+            <b class="activity__subtitle">2 февраля</b>
+            <h3 class="activity__city">Москва</h3>
+            <span class="activity__sale">20% скидка</span>
+            <div class="activity__btns">
+              <button class="btn btn--promo">Промокод: FRIDAY5</button>
+              <a class="btn btn--href" href="/">Принять участие</a>
+            </div>
+          </li>
+          <li class="activity__item activity__item--3">
+            <img class="activity__img" width="84" height="42" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
             <b class="activity__subtitle">2 февраля</b>
             <h3 class="activity__city">Москва</h3>
             <span class="activity__sale">20% скидка</span>
@@ -50,23 +83,55 @@
         </ul>
 
         <section class="banner">
-          <h2>Бежит вся Россия!</h2>
-          <b>V Всероссийский полумарафон</b>
-          <span>20% скидка</span>
-          <div class="banner__btns">
-            <button class="btn btn--promo">Промокод: FRIDAY5</button>
-            <a class="btn btn--href" href="/">Принять участие</a>
+          <div class="banner__wrap">
+            <h2 class="banner__title">Бежит вся Россия!</h2>
+            <b class="banner__text">V Всероссийский полумарафон</b>
+            <span class="activity__sale activity__sale--banner">20% скидка</span>
+            <div class="banner__btns">
+              <button class="banner__btn btn btn--promo">Промокод: FRIDAY5</button>
+              <a class="banner__btn btn btn--href" href="/">Принять участие</a>
+            </div>
           </div>
+
+          <picture class="banner__logo">
+            <img src="src/assets/images/race-hash.svg" alt="Лого мероприятия">
+          </picture>
         </section>
 
         <ul class="activity__list activity__list--sec">
-          <li class="activity__item activity__item--sec">
-            <img src="" alt="">
-            <b>2 февраля</b>
-            <h3>Москва</h3>
-            <span>20% скидка</span>
-            <div class="activity__btns">
-              <button class="btn btn--promo">Промокод: FRIDAY5</button>
+          <li class="activity__item proj proj--1">
+            <img class="activity__img" width="69" height="61" src="src/assets/images/logo-arena.svg" alt="Лого мероприятия">
+            <h3 class="activity__city activity__city--sec">Москва</h3>
+            <span class="activity__sale activity__sale--sec">20% скидка</span>
+            <div class="activity__btns activity__btns--sec">
+              <button class="activity__btn activity__btn--sec btn btn--promo">Промокод: FRIDAY5</button>
+              <a class="btn btn--href" href="/">Принять участие</a>
+            </div>
+          </li>
+          <li class="activity__item proj proj--2">
+            <img class="activity__img" width="130" height="40" src="src/assets/images/logo-herogames.svg" alt="Лого мероприятия">
+            <h3 class="activity__city activity__city--sec">Москва</h3>
+            <span class="activity__sale activity__sale--sec">20% скидка</span>
+            <div class="activity__btns activity__btns--sec">
+              <button class="activity__btn activity__btn--sec btn btn--promo">Промокод: FRIDAY5</button>
+              <a class="btn btn--href" href="/">Принять участие</a>
+            </div>
+          </li>
+          <li class="activity__item proj proj--3">
+            <img class="activity__img" width="69" height="61" src="src/assets/images/logo-letape.svg" alt="Лого мероприятия">
+            <h3 class="activity__city activity__city--sec">Москва</h3>
+            <span class="activity__sale activity__sale--sec">20% скидка</span>
+            <div class="activity__btns activity__btns--sec">
+              <button class="activity__btn activity__btn--sec btn btn--promo">Промокод: FRIDAY5</button>
+              <a class="btn btn--href" href="/">Принять участие</a>
+            </div>
+          </li>
+          <li class="activity__item proj proj--4">
+            <img class="activity__img" width="69" height="61" src="src/assets/images/logo-letape.svg" alt="Лого мероприятия">
+            <h3 class="activity__city activity__city--sec">Москва</h3>
+            <span class="activity__sale activity__sale--sec">20% скидка</span>
+            <div class="activity__btns activity__btns--sec">
+              <button class="activity__btn activity__btn--sec btn btn--promo">Промокод: FRIDAY5</button>
               <a class="btn btn--href" href="/">Принять участие</a>
             </div>
           </li>
@@ -74,12 +139,12 @@
       </section>
 
       <footer class="footer">
-        <img src="" alt="Лого">
-        <p class="copyright">
+        <img src="src/assets/images/logo-lh.svg" alt="Лого Лиги Героев">
+        <p class="footer__copyright">
           <span>Copyright © АНО “Гонка Героев” 2015 - 2020</span>
           <span>ООО “Лига Героев Спорт Проджектс”</span>
         </p>
-        <a href="/">Политика конфиденциальности</a>
+        <a class="footer__politics" href="/">Политика конфиденциальности</a>
       </footer>
     </div>
 

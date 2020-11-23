@@ -1,6 +1,8 @@
 @import './mixin.scss';
 
 .sale {
+  display: flex;
+  align-items: center;
   position: relative;
   padding: 2rem 4.375rem 2.375rem 3.5rem;
   margin-bottom: 3.125rem ;
@@ -34,4 +36,38 @@
   line-height: 1.14;
 
   text-transform: lowercase;
+}
+
+.sale__timer {
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  font-family: 'DIN Pro';
+  font-size: 2.25rem;
+  font-weight: 900;
+  line-height: 1.222;
+}
+
+.timer__section {
+  display: flex;
+  align-items: center;
+  width: 5.5rem;
+  justify-content: space-between;
+
+  & div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    min-height: 4rem;
+    background-color: #121111;
+    border-radius: 0.3125rem;
+  }
+}
+
+.timer__delimetr {
+  display: flex;
+  margin: 0 0.625rem 0.625rem;
 }
