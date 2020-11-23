@@ -49,3 +49,22 @@
   margin: auto 4rem auto auto;
   flex-shrink: 0;
 }
+
+
+
+@media (max-width: 1130px) and (min-width: 992px) {
+  .banner__title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner__title {
+    font-size: 2.5rem;
+  }
+
+  .banner__logo {
+    width: 12rem;
+    margin: auto 2.5rem auto auto;
+  }
+}

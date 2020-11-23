@@ -2,7 +2,7 @@
   background: url('../assets/images/back1.svg'), url('../assets/images/back2.svg'), url('../assets/images/back3.svg');
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 100%, 20%, 52%;
-  background-position: -4rem -8.5rem, right 65rem, left 72rem;
+  background-position: -4rem -8.5rem, right 65rem, left bottom;
 }
 
 .container {
@@ -17,5 +17,19 @@
   .container {
     width: 100%;
     padding: 0 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 375px;
+    min-width: 320px;
+    padding: 0 1.25rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
   }
 }

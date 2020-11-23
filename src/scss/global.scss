@@ -94,10 +94,20 @@ ul {
   &--promo {
     background-color: #465A82;
     width: 10.5625rem;
+    margin-right: 0.625rem;
   }
 
   &--href {
     background: linear-gradient(267.53deg, #ED1C24 -0.27%, #8820B9 100%);
     width: 9.75rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .btn {
+    &--promo {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
   }
 }

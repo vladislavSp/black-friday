@@ -71,3 +71,56 @@
   display: flex;
   margin: 0 0.625rem 0.625rem;
 }
+
+
+@media (max-width: 991px) {
+  .sale {
+    display: block;
+  }
+
+  .sale__wrapper {
+    margin-bottom: 1.375rem;
+  }
+
+  .sale__title {
+    margin-bottom: 0.25rem;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .sale {
+    padding: 1.5rem 1rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .sale__title {
+    font-size: 1.375rem;
+    line-height: 1.27;
+  }
+
+  .sale__timer {
+    font-size: 1.75rem;
+    line-height: 1.285;
+  }
+
+  .timer__section {
+    width: 5.25rem;
+
+    & div {
+      width: 2.375rem;
+      min-height: 3.75rem;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .timer__section {
+    & div {
+      flex-basis: 2.25rem;
+      flex-grow: 1;
+      width: auto;
+      margin-right: 0.5rem;
+    }
+  }
+}

@@ -3,3 +3,13 @@
   margin-bottom: 1.375rem;
 }
 
+@media (max-width: 767px) {
+  .header {
+    padding: 2.25rem 0;
+    margin-bottom: 1rem;
+
+    & img {
+      width: 3.625rem;
+    }
+  }
+}

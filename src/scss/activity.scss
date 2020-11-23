@@ -144,8 +144,7 @@
 .activity__btns {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  align-self: stretch;
+  width: 100%;
 
   &--sec {
     display: block;
@@ -155,5 +154,34 @@
 .activity__btn {
   &--sec {
     margin-bottom: 0.625rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .activity__city {
+    font-size: 3rem;
+  }
+
+  .activity__btns {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .activity__city {
+    font-size: 2.5rem;
+    margin-bottom: 2.25rem;
+
+    &--sec {
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .activity__title {
+    font-size: 2rem;
+    line-height: 1.25;
+    margin-bottom: 1.25rem;
   }
 }
