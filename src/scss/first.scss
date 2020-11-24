@@ -31,16 +31,26 @@
 }
 
 .first__image {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
   pointer-events: none;
+
+  &--balls {
+    top: 10rem;
+    right: -5rem;
+  }
 }
 
 @media (max-width: 1130px) and (min-width: 992px) {
   .first__image {
     top: 7.5rem;
     width: 36.25rem;
+
+    &--balls {
+      width: 30rem;
+    }
   }
 }
 
@@ -48,6 +58,11 @@
   .first__image {
     top: 0rem;
     width: 36.25rem;
+
+    &--balls {
+      top: 10rem;
+      width: 25rem;
+    }
   }
 
   .first__title {
@@ -75,6 +90,12 @@
     top: 4rem;
     z-index: -1;
     right: -2rem;
+
+    &--balls {
+      top: 4.5rem;
+      right: -4rem;
+      width: 14rem;
+    }
   }
 
   .first__subtitle {

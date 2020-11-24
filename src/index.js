@@ -15,3 +15,5 @@ import './scss/footer.scss';
 
 // js
 import './js/app.js';
+import './js/random-image.js';
+import './js/filters.js';

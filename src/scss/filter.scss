@@ -17,6 +17,22 @@
   align-items: center;
 }
 
+.filter__radio:checked + .filter__btn {
+  background-color: #151515;
+
+  &::before {
+    @include pseudo;
+
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: inherit;
+    background: linear-gradient(135deg, #FA383F, #D927C7);
+    z-index: -1;
+  }
+}
+
 .filter__btn {
   position: relative;
   display: flex;
@@ -30,6 +46,7 @@
 
   &--active {
     background-color: #151515;
+
     &::before {
       @include pseudo;
 

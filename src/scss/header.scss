@@ -4,6 +4,7 @@
 }
 
 .header__logo {
+  display: inline-block;
   margin-right: 1.25rem;
 }
 
@@ -11,11 +12,11 @@
   .header__logo {
     width: 3.625rem;
     margin-right: 1rem;
+    flex-shrink: 0;
   }
 
   .header__bf {
     width: 15rem;
-    flex-basis: 15rem;
   }
 }
 
@@ -24,5 +25,9 @@
     display: flex;
     padding: 2.25rem 0;
     margin-bottom: 1rem;
+  }
+
+  .header__bf {
+    width: calc(100% - 4.5rem);
   }
 }
