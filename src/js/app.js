@@ -36,14 +36,8 @@ function insertData(data, fields) {
 }
 
 let firstData = getLeftTime(2020, 10, 27);
-let endData = getLeftTime(2020, 10, 31);
+let endData = getLeftTime(2020, 10, 30);
 let data;
-
-if (firstData.delta > 0) {
-  text.textContent = `До начала предложения осталось:`;
-} else {
-  text.textContent = `До конца действия предложения осталось:`;
-}
 
 // let timer = () => {
 //   insertData(data.days, daysFields);
@@ -56,11 +50,13 @@ const timer = () => {
 
   if (data.delta > 0) {
     data = getLeftTime(2020, 10, 27);
+    text.textContent = `До начала предложения осталось:`;
   } else {
-    data = getLeftTime(2020, 10, 31);
+    data = getLeftTime(2020, 10, 30);
+    text.textContent = `До конца действия предложения осталось:`;
   }
 
-  insertData(data.days * 24, daysFields);
+  insertData(data.days * 24 + data.hours, daysFields);
   insertData(data.minutes, hoursFields);
   insertData(data.seconds, minutesFields);
 }
