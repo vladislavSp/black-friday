@@ -12,7 +12,8 @@
 
     <div class="container">
       <header class="header">
-        <img src="src/assets/images/logo-lh.svg" alt="Лого Лиги Героев">
+        <img class="header__logo" src="src/assets/images/logo-lh.svg" alt="Лого Лиги Героев">
+        <img class="header__bf" src="src/assets/images/bf.svg" alt="Black Friday">
       </header>
 
       <section class="first">
@@ -34,12 +35,12 @@
             <div class="days_1" data-days="first">0</div>
             <div class="days_2" data-days="second">0</div>
           </div>
-          <div class="timer__delimetr">:</div>
+          <div class="timer__delimetr" data-delimetr="tick">:</div>
           <div class="timer__section">
             <div class="hours_1" data-hours="first">0</div>
             <div class="hours_2" data-hours="second">0</div>
           </div>
-          <div class="timer__delimetr">:</div>
+          <div class="timer__delimetr" data-delimetr="tick">:</div>
           <div class="timer__section">
             <div class="minutes_1" data-minutes="first">0</div>
             <div class="minutes_2" data-minutes="second">0</div>
@@ -49,35 +50,168 @@
 
       <section class="activity">
         <h2 class="activity__title">Скидка <span class="colorized-text">20%</span> на мероприятия:</h2>
+        <div class="activity__filter filter">
+          <span class="filter__sub">Фильтр по мероприятиям:</span>
+          <ul class="filter__list">
+            <li>
+              <button class="filter__btn">
+                <img class="filter__img filter__img--racehero" width="111" height="57" src="src/assets/images/logo-racehero.svg" alt="фильтр Гонка Героев">
+              </button>
+            </li>
+            <li>
+              <button class="filter__btn">
+                <img class="filter__img filter__img--arena" width="77" height="68" src="src/assets/images/logo-arena.svg" alt="фильтр Арена Героев">
+              </button>
+            </li>
+            <li class="filter__order">
+              <button class="filter__btn filter__btn--active">
+                <img class="filter__img filter__img--games" width="175" height="53" src="src/assets/images/logo-herogames.svg" alt="фильтр Игры Героев">
+              </button>
+            </li>
+            <li>
+              <button class="filter__btn">
+                <img class="filter__img filter__img--letape" width="92" height="63" src="src/assets/images/logo-letape.svg" alt="фильтр Letape">
+              </button>
+            </li>
+            <li>
+              <button class="filter__btn">
+                <img class="filter__img filter__img--run" width="120" height="59" src="src/assets/images/race-hash.svg" alt="фильтр Забег">
+              </button>
+            </li>
+          </ul>
+        </div>
+        
         <ul class="activity__list">
           <li class="activity__item">
             <img class="activity__img" width="84" height="42" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
             <b class="activity__subtitle">2 февраля</b>
             <h3 class="activity__city">Москва</h3>
             <span class="activity__sale">20% скидка</span>
+            <button class="btn btn--promo">Промокод:&nbsp;<span>FRIDAY5</span></button>
             <div class="activity__btns">
-              <button class="btn btn--promo">Промокод: FRIDAY5</button>
               <a class="btn btn--href" href="/">Принять участие</a>
+              <a class="btn btn--project" href="/">О проекте</a>
             </div>
           </li>
           <li class="activity__item activity__item--2">
             <img class="activity__img" width="84" height="42" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
-            <b class="activity__subtitle">2 февраля</b>
-            <h3 class="activity__city">Москва</h3>
+            <b class="activity__subtitle">7 августа</b>
+            <h3 class="activity__city">Казань</h3>
             <span class="activity__sale">20% скидка</span>
+            <button class="btn btn--promo">Промокод:&nbsp;<span>FRIDAY5</span></button>
             <div class="activity__btns">
-              <button class="btn btn--promo">Промокод: FRIDAY5</button>
               <a class="btn btn--href" href="/">Принять участие</a>
+              <a class="btn btn--project" href="/">О проекте</a>
             </div>
           </li>
           <li class="activity__item activity__item--3">
             <img class="activity__img" width="84" height="42" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
-            <b class="activity__subtitle">2 февраля</b>
+            <b class="activity__subtitle">5 июня</b>
+            <h3 class="activity__city">Самара</h3>
+            <span class="activity__sale">20% скидка</span>
+            <button class="btn btn--promo">Промокод:&nbsp;<span>FRIDAY5</span></button>
+            <div class="activity__btns">
+              <a class="btn btn--href" href="/">Принять участие</a>
+              <a class="btn btn--project" href="/">О проекте</a>
+            </div>
+          </li>
+          <li class="activity__item activity__item--4">
+            <img class="activity__img" width="84" height="42" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
+            <b class="activity__subtitle">19 июня</b>
+            <h3 class="activity__city">Самара</h3>
+            <span class="activity__sale">20% скидка</span>
+            <button class="btn btn--promo">Промокод:&nbsp;<span>FRIDAY5</span></button>
+            <div class="activity__btns">
+              <a class="btn btn--href" href="/">Принять участие</a>
+              <a class="btn btn--project" href="/">О проекте</a>
+            </div>
+          </li>
+          <li class="activity__item activity__item--5">
+            <img class="activity__img" width="84" height="42" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
+            <b class="activity__subtitle">19 июня</b>
+            <h3 class="activity__city">Челябинск</h3>
+            <span class="activity__sale">20% скидка</span>
+            <button class="btn btn--promo">Промокод:&nbsp;<span>FRIDAY5</span></button>
+            <div class="activity__btns">
+              <a class="btn btn--href" href="/">Принять участие</a>
+              <a class="btn btn--project" href="/">О проекте</a>
+            </div>
+          </li>
+          <li class="activity__item activity__item--6">
+            <img class="activity__img" width="84" height="42" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
+            <b class="activity__subtitle">24 апреля</b>
             <h3 class="activity__city">Москва</h3>
             <span class="activity__sale">20% скидка</span>
+            <button class="btn btn--promo">Промокод:&nbsp;<span>FRIDAY5</span></button>
             <div class="activity__btns">
-              <button class="btn btn--promo">Промокод: FRIDAY5</button>
               <a class="btn btn--href" href="/">Принять участие</a>
+              <a class="btn btn--project" href="/">О проекте</a>
+            </div>
+          </li>
+          <li class="activity__item activity__item--7">
+            <img class="activity__img" width="84" height="42" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
+            <b class="activity__subtitle">31 июля</b>
+            <h3 class="activity__city">Новосибирск</h3>
+            <span class="activity__sale">20% скидка</span>
+            <button class="btn btn--promo">Промокод:&nbsp;<span>FRIDAY5</span></button>
+            <div class="activity__btns">
+              <a class="btn btn--href" href="/">Принять участие</a>
+              <a class="btn btn--project" href="/">О проекте</a>
+            </div>
+          </li>
+          <li class="activity__item activity__item--8">
+            <img class="activity__img" width="84" height="42" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
+            <b class="activity__subtitle">31 июля</b>
+            <h3 class="activity__city">Владивосток</h3>
+            <span class="activity__sale">20% скидка</span>
+            <button class="btn btn--promo">Промокод:&nbsp;<span>FRIDAY5</span></button>
+            <div class="activity__btns">
+              <a class="btn btn--href" href="/">Принять участие</a>
+              <a class="btn btn--project" href="/">О проекте</a>
+            </div>
+          </li>
+          <li class="activity__item activity__item--9">
+            <img class="activity__img" width="84" height="42" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
+            <b class="activity__subtitle">21 августа</b>
+            <h3 class="activity__city">Казань</h3>
+            <span class="activity__sale">20% скидка</span>
+            <button class="btn btn--promo">Промокод:&nbsp;<span>FRIDAY5</span></button>
+            <div class="activity__btns">
+              <a class="btn btn--href" href="/">Принять участие</a>
+              <a class="btn btn--project" href="/">О проекте</a>
+            </div>
+          </li>
+          <li class="activity__item activity__item--10">
+            <img class="activity__img" width="84" height="42" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
+            <b class="activity__subtitle">4 сентября</b>
+            <h3 class="activity__city">Тула</h3>
+            <span class="activity__sale">20% скидка</span>
+            <button class="btn btn--promo">Промокод:&nbsp;<span>FRIDAY5</span></button>
+            <div class="activity__btns">
+              <a class="btn btn--href" href="/">Принять участие</a>
+              <a class="btn btn--project" href="/">О проекте</a>
+            </div>
+          </li>
+          <li class="activity__item activity__item--11">
+            <img class="activity__img" width="84" height="42" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
+            <b class="activity__subtitle">6 июня</b>
+            <h3 class="activity__city activity__city--spb">Санкт-Петербург</h3>
+            <span class="activity__sale">20% скидка</span>
+            <button class="btn btn--promo">Промокод:&nbsp;<span>FRIDAY5</span></button>
+            <div class="activity__btns">
+              <a class="btn btn--href" href="/">Принять участие</a>
+              <a class="btn btn--project" href="/">О проекте</a>
+            </div>
+          </li>
+          <li class="activity__item activity__item--12">
+            <img class="activity__img" width="84" height="42" src="src/assets/images/logo-racehero.svg" alt="Лого Мероприятия">
+            <b class="activity__subtitle">17 июля</b>
+            <h3 class="activity__city">Рязань</h3>
+            <span class="activity__sale">20% скидка</span>
+            <button class="btn btn--promo">Промокод:&nbsp;<span>FRIDAY5</span></button>
+            <div class="activity__btns">
+              <a class="btn btn--href" href="/">Принять участие</a>
+              <a class="btn btn--project" href="/">О проекте</a>
             </div>
           </li>
         </ul>
@@ -88,8 +222,9 @@
             <b class="banner__text">V Всероссийский полумарафон</b>
             <span class="activity__sale activity__sale--banner">20% скидка</span>
             <div class="banner__btns">
-              <button class="banner__btn btn btn--promo">Промокод: FRIDAY5</button>
+              <button class="banner__btn btn btn--promo">Промокод:&nbsp;<span>FRIDAY5</span></button>
               <a class="banner__btn btn btn--href" href="/">Принять участие</a>
+              <a class="btn btn--project" href="/">О проекте</a>
             </div>
           </div>
 
@@ -128,7 +263,7 @@
           </li>
           <li class="activity__item proj proj--4">
             <img class="activity__img" width="69" height="61" src="src/assets/images/logo-letape.svg" alt="Лого мероприятия">
-            <h3 class="activity__city activity__city--sec">Москва</h3>
+            <h3 class="activity__city activity__city--sec">Санкт-Петербург</h3>
             <span class="activity__sale activity__sale--sec">20% скидка</span>
             <div class="activity__btns activity__btns--sec">
               <button class="activity__btn activity__btn--sec btn btn--promo">Промокод: FRIDAY5</button>

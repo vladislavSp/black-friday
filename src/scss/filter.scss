@@ -1,0 +1,115 @@
+@import './mixin.scss';
+
+.filter {
+  margin-bottom: 3.125rem;
+}
+
+.filter__sub {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.142;
+}
+
+.filter__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &--active {
+    background-color: #151515;
+    &::before {
+      @include pseudo;
+
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      border-radius: inherit;
+      background: linear-gradient(135deg, #FA383F, #D927C7);
+      z-index: -1;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .filter__list {
+    flex-wrap: wrap;
+  }
+
+  .filter__btn {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .filter {
+    margin-bottom: 1rem;
+  }
+
+  .filter__list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    & li {
+      margin-right: 1.25rem;
+      margin-bottom: 1.125rem;
+    }
+
+    & .filter__order {
+      order: 1;
+    }
+  }
+
+  .filter__btn {
+    padding: 0.625rem 1rem;
+    min-height: 4.375rem;
+
+    background-color: #151515;
+    &::before {
+      @include pseudo;
+
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      border-radius: inherit;
+      background: linear-gradient(135deg, #FA383F, #D927C7);
+      z-index: -1;
+    }
+  }
+
+  .filter__img {
+    &--racehero {
+      width: 3rem;
+    }
+
+    &--arena {
+      width: 2.625rem;
+    }
+
+    &--games {
+      width: 7.5rem;
+    }
+
+    &--letape {
+      width: 3.625rem;
+    }
+
+    &--run {
+      width: 5.625rem;
+    }
+  }
+}

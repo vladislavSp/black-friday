@@ -3,13 +3,26 @@
   margin-bottom: 1.375rem;
 }
 
+.header__logo {
+  margin-right: 1.25rem;
+}
+
+@media (max-width: 991px) {
+  .header__logo {
+    width: 3.625rem;
+    margin-right: 1rem;
+  }
+
+  .header__bf {
+    width: 15rem;
+    flex-basis: 15rem;
+  }
+}
+
 @media (max-width: 767px) {
   .header {
+    display: flex;
     padding: 2.25rem 0;
     margin-bottom: 1rem;
-
-    & img {
-      width: 3.625rem;
-    }
   }
 }

@@ -9,6 +9,7 @@ import './scss/header.scss';
 import './scss/first.scss';
 import './scss/sale.scss';
 import './scss/activity.scss';
+import './scss/filter.scss';
 import './scss/banner.scss';
 import './scss/footer.scss';
 

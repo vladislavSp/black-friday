@@ -1,7 +1,7 @@
 @import './variables.scss';
 
 .activity {
-  padding-bottom: 2.8125rem;
+  padding-bottom: 4.375rem;
 }
 
 .activity__title {
@@ -10,14 +10,15 @@
   line-height: 1.23;
   text-transform: uppercase;
 
-  margin-bottom: 3.75rem;
+  margin-bottom: 2.375rem;
 }
 
 .activity__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.5rem;
-  margin-bottom: 3.125rem;
+  row-gap: 2.5rem;
+  margin-bottom: 2.5rem;
 
   &--sec {
     margin-bottom: 0;
@@ -55,6 +56,78 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url('../assets/images/act3-2x.jpg');
+    }
+  }
+
+  &--4 {
+    background-image: url('../assets/images/act8-1x-min.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../assets/images/act8-2x-min.jpg');
+    }
+  }
+
+  &--5 {
+    background-image: url('../assets/images/act9-1x-min.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../assets/images/act9-2x-min.jpg');
+    }
+  }
+
+  &--6 {
+    background-image: url('../assets/images/act10-1x-min.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../assets/images/act10-2x-min.jpg');
+    }
+  }
+
+  &--7 {
+    background-image: url('../assets/images/act11-1x-min.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../assets/images/act11-2x-min.jpg');
+    }
+  }
+
+  &--8 {
+    background-image: url('../assets/images/act12-1x-min.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../assets/images/act12-2x-min.jpg');
+    }
+  }
+
+  &--9 {
+    background-image: url('../assets/images/act13-1x-min.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../assets/images/act13-2x-min.jpg');
+    }
+  }
+
+  &--10 {
+    background-image: url('../assets/images/act14-1x-min.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../assets/images/act14-2x-min.jpg');
+    }
+  }
+
+  &--11 {
+    background-image: url('../assets/images/act15-1x-min.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../assets/images/act15-2x-min.jpg');
+    }
+  }
+
+  &--12 {
+    background-image: url('../assets/images/act16-1x-min.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../assets/images/act16-2x-min.jpg');
     }
   }
 }
@@ -108,12 +181,13 @@
 
 .activity__city {
   font-family: 'DIN Pro';
-  font-size: 3.625rem;
+  font-size: 3rem;
   font-weight: 900;
-  line-height: 1.2;
+  line-height: 1;
   text-transform: uppercase;
+  letter-spacing: -0.04em;
 
-  margin-bottom: 3.3125rem;
+  margin-bottom: 1.25rem;
 
   &--sec {
     margin-bottom: 1.25rem;
@@ -137,11 +211,12 @@
   }
 
   &--sec {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 }
 
 .activity__btns {
+  margin-top: 0.625rem;
   display: flex;
   align-items: center;
   width: 100%;
@@ -159,22 +234,14 @@
 
 @media (max-width: 1199px) {
   .activity__city {
-    font-size: 3rem;
-  }
-
-  .activity__btns {
-    display: block;
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 991px) {
   .activity__city {
-    font-size: 2.5rem;
-    margin-bottom: 2.25rem;
-
-    &--sec {
-      margin-bottom: 1.25rem;
-    }
+    font-size: 2.25rem;
+    line-height: 1.18;
   }
 }
 
@@ -182,6 +249,48 @@
   .activity__title {
     font-size: 2rem;
     line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+
+  .activity__list {
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    gap: 1.25rem;
     margin-bottom: 1.25rem;
+  }
+
+  .activity__item {
+    padding: 1.25rem 0.625rem 1rem;
+    min-height: 15.3125rem;
+  }
+
+  .activity__img {
+    width: 3.5rem;
+  }
+
+  .activity__subtitle {
+    font-size: 0.875rem;
+  }
+
+  .activity__city {
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
+    word-break: break-all;
+    white-space: normal;
+
+    &--spb {
+      word-break: normal;
+    }
+  }
+
+  .activity__sale {
+    padding: 0.25rem 0.625rem;
+    font-size: 0.75rem;
+    margin-left: -0.625rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .activity__btns {
+    margin: 0;
+    width: auto;
   }
 }

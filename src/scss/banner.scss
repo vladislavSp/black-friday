@@ -59,6 +59,10 @@
 }
 
 @media (max-width: 991px) {
+  .banner {
+    margin-bottom: 2.75rem;
+  }
+
   .banner__title {
     font-size: 2.5rem;
   }
@@ -66,5 +70,11 @@
   .banner__logo {
     width: 12rem;
     margin: auto 2.5rem auto auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    margin-bottom: 1.25rem;
   }
 }
