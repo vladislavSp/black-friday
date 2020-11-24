@@ -5,7 +5,7 @@ const timerDelimetrs = document.querySelectorAll('*[data-delimetr]');
 const text = document.querySelector('.sale__text');
 
 // Return Left Time to input date
-const getLeftTime = (year = 2100, month = 1, day = 1) => {
+const getLeftTime = (year = 2021, month = 1, day = 1) => {
   const dateFuture = new Date(year, month, day);
   const dateNow = Date.now();
   const delta = dateFuture.getTime() - dateNow;
@@ -40,23 +40,30 @@ let endData = getLeftTime(2020, 10, 31);
 let data;
 
 if (firstData.delta > 0) {
-  data = firstData;
   text.textContent = `До начала предложения осталось:`;
 } else {
-  data = endData;
   text.textContent = `До конца действия предложения осталось:`;
 }
 
-
-let timer = () => {
-  insertData(data.days, daysFields);
-  insertData(data.hours, hoursFields);
-  insertData(data.minutes, minutesFields);
-};
-
-// let tick = () => {
-//   timerDelimetrs.forEach(el => el.classList.toggle('timer__delimetr--opacity'));
+// let timer = () => {
+//   insertData(data.days, daysFields);
+//   insertData(data.hours, hoursFields);
+//   insertData(data.minutes, minutesFields);
 // };
 
+const timer = () => {
+  let data = getLeftTime(2020, 10, 27);
+
+  if (data.delta > 0) {
+    data = getLeftTime(2020, 10, 27);
+  } else {
+    data = getLeftTime(2020, 10, 31);
+  }
+
+  insertData(data.days * 24, daysFields);
+  insertData(data.minutes, hoursFields);
+  insertData(data.seconds, minutesFields);
+}
+
+
 setInterval(timer, 1000);
-// setInterval(tick, 1000);
