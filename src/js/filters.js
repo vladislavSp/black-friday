@@ -15,9 +15,9 @@ function filterActivity() {
 
 function visibleBlocks(filter) {
   blocks.forEach(block => {
-    block.style.display = 'none';
+    block.setAttribute('data-vis', false);
     if (block.getAttribute('data-filter-block') === filter) {
-      block.style.display = '';
+      block.setAttribute('data-vis', true);
     }
   });
 }

@@ -61,6 +61,10 @@
   }
 }
 
+ul[data-vis="false"], li[data-vis="false"], section[data-vis="false"] {
+  display: none;
+}
+
 @media (max-width: 991px) {
   .filter__list {
     flex-wrap: wrap;

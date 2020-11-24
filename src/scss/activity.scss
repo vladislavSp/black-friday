@@ -18,11 +18,8 @@
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.5rem;
   row-gap: 2.5rem;
-  margin-bottom: 2.5rem;
 
   &--sec {
-    margin-top: 4.375rem;
-    margin-bottom: 0;
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -233,6 +230,10 @@
   }
 }
 
+ul[data-vis="false"], li[data-vis="false"], section[data-vis="false"] {
+  display: none;
+}
+
 @media (max-width: 1199px) {
   .activity__list {
     &--sec {
@@ -249,7 +250,6 @@
   .activity__list {
     &--sec {
       grid-template-columns: repeat(2, 1fr);
-      margin-top: 2.75rem;
     }
   }
 
@@ -273,12 +273,6 @@
   .activity__list {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
-    margin-bottom: 1.25rem;
-
-    &--sec {
-      margin-top: 1.25rem;
-      margin-bottom: 0;
-    }
   }
 
   .activity__item {
