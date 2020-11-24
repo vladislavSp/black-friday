@@ -40,16 +40,14 @@
 }
 
 .banner__btn {
-  &:first-child {
-    margin-right: 1.25rem;
-  }
+  margin-right: 1.25rem;
+  margin-bottom: 0;
 }
 
 .banner__logo {
   margin: auto 4rem auto auto;
   flex-shrink: 0;
 }
-
 
 
 @media (max-width: 1130px) and (min-width: 992px) {
@@ -65,16 +63,44 @@
 
   .banner__title {
     font-size: 2.5rem;
+    line-height: 1;
   }
 
   .banner__logo {
     width: 12rem;
     margin: auto 2.5rem auto auto;
   }
+
+  .banner__btn {
+    margin-right: 1rem;
+  }
 }
 
 @media (max-width: 767px) {
   .banner {
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 1.25rem;
+    padding: 1.5rem 1.5rem 1.25rem;
+    background-image: url('../assets/images/banner1x-mob-min.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../assets/images/banner2x-mob-min.jpg');
+    }
+  }
+
+  .banner__logo {
+    order: -1;
+    width: 6.25rem;
+    margin: 0 0 1.125rem;
+  }
+
+  .banner__title {
+    font-size: 3rem;
+    margin-bottom: 1.125rem;
+  }
+
+  .banner__text {
+    display: none;
   }
 }

@@ -246,6 +246,10 @@
 }
 
 @media (max-width: 767px) {
+  .activity {
+    padding-bottom: 2.75rem;
+  }
+
   .activity__title {
     font-size: 2rem;
     line-height: 1.25;
@@ -256,6 +260,10 @@
     grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
     gap: 1.25rem;
     margin-bottom: 1.25rem;
+
+    &--sec {
+      margin-bottom: 0;
+    }
   }
 
   .activity__item {
@@ -287,6 +295,10 @@
     font-size: 0.75rem;
     margin-left: -0.625rem;
     margin-bottom: 0.875rem;
+
+    &--banner {
+      margin-left: -1.5rem;
+    }
   }
 
   .activity__btns {
