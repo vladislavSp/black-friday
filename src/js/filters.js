@@ -1,10 +1,23 @@
 const btnsFilter = [...document.querySelectorAll('*[data-filter-btn]')];
+const blocks = [...document.querySelectorAll('[data-filter-block]')];
+
+if (btnsFilter.length) {
+  btnsFilter.forEach((btn) => {
+    btn.checked = false;
+    btn.addEventListener('click', filterActivity)
+  });
+}
 
 function filterActivity() {
   let filter = this.getAttribute('data-filter-btn');
-  console.log(filter);
+  visibleBlocks(filter);
 }
 
-if (btnsFilter.length) {
-  btnsFilter.forEach((btn) => btn.addEventListener('click', filterActivity));
+function visibleBlocks(filter) {
+  blocks.forEach(block => {
+    block.style.display = 'none';
+    if (block.getAttribute('data-filter-block') === filter) {
+      block.style.display = '';
+    }
+  });
 }

@@ -21,8 +21,9 @@
   margin-bottom: 2.5rem;
 
   &--sec {
+    margin-top: 4.375rem;
     margin-bottom: 0;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -233,12 +234,25 @@
 }
 
 @media (max-width: 1199px) {
+  .activity__list {
+    &--sec {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
   .activity__city {
     font-size: 2.5rem;
   }
 }
 
 @media (max-width: 991px) {
+  .activity__list {
+    &--sec {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 2.75rem;
+    }
+  }
+
   .activity__city {
     font-size: 2.25rem;
     line-height: 1.18;
@@ -257,11 +271,12 @@
   }
 
   .activity__list {
-    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
     margin-bottom: 1.25rem;
 
     &--sec {
+      margin-top: 1.25rem;
       margin-bottom: 0;
     }
   }
