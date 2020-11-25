@@ -15,7 +15,7 @@
 
 .activity__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
   gap: 1.5rem;
   row-gap: 2.5rem;
 
@@ -231,11 +231,10 @@
   }
 }
 
-@media (max-width: 1439px) {
-  .activity__list {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.activity__fix {
+  display: flex;
 }
+
 
 @media (max-width: 1199px) {
   .activity__list {
