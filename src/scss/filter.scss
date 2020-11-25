@@ -17,7 +17,7 @@
   align-items: center;
 
   & li {
-    margin-right: 6.25rem;
+    margin-right: 3.25rem;
 
     &:last-child {
       margin-right: 0;
@@ -51,6 +51,7 @@
   background-color: transparent;
   border: 1px solid transparent;
   cursor: pointer;
+  // max-height: 7.8125rem;
 
   &--active {
     background-color: #151515;
