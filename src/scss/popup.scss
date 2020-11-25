@@ -1,0 +1,39 @@
+.popup {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 3rem;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  &--vis {
+    opacity: 1;
+  }
+}
+
+// .popup__wrapper {
+//   padding-bottom: 3rem;
+// }
+
+.popup__text {
+  padding: 1rem;
+  background: #151515; // linear-gradient(267.53deg, #ED1C24 -0.27%, #8820B9 100%);
+  border-radius: 0.625rem;
+
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+@media (max-width: 767px) {
+  .popup__text {
+    padding: 0.5rem;
+
+    font-size: 0.625rem;
+  }
+}

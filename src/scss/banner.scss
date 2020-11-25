@@ -80,8 +80,16 @@
     margin: auto 2.5rem auto auto;
   }
 
+  .banner__btns {
+    display: block;
+  }
+
   .banner__btn {
-    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -112,5 +120,15 @@
 
   .banner__text {
     display: none;
+  }
+
+  .banner__btn {
+    width: 10.5rem;
+    margin-bottom: 0.5rem;
+
+    &:last-child {
+      width: 9.75rem;
+      margin: 0;
+    }
   }
 }

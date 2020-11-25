@@ -32,13 +32,13 @@
   padding: 1.75rem 1.75rem 1.875rem 1.25rem;
 
   border-radius: 1rem;
-  background-image: url('../assets/images/act1-1x.jpg');
+  background-image: url('../assets/images/wint1x.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url('../assets/images/act1-2x.jpg');
+    background-image: url('../assets/images/wint2x.jpg');
   }
 
   &--2 {
@@ -175,6 +175,7 @@
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.19;
+  text-transform: uppercase;
 }
 
 .activity__city {
@@ -230,9 +231,16 @@
   }
 }
 
+@media (max-width: 1439px) {
+  .activity__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 @media (max-width: 1199px) {
   .activity__list {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
     &--sec {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -240,6 +248,10 @@
 
   .activity__city {
     font-size: 2.5rem;
+  }
+
+  .activity__fix {
+    display: none;
   }
 }
 

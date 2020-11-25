@@ -12,8 +12,10 @@ import './scss/activity.scss';
 import './scss/filter.scss';
 import './scss/banner.scss';
 import './scss/footer.scss';
+import './scss/popup.scss';
 
 // js
 import './js/app.js';
 import './js/random-image.js';
 import './js/filters.js';
+import './js/copy.js';
