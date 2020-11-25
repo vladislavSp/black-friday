@@ -1,10 +1,8 @@
-const btnsCopy = [...document.querySelectorAll('.btn--promo')];
+const btnsCopy = Array.from(document.querySelectorAll('.btn--promo'));
 const popup = document.querySelector('.popup');
-let timer;
 
 const copyText = (evt) => {
   evt.preventDefault();
-
   const target = evt.currentTarget;
 
   if (navigator.clipboard) {
@@ -15,9 +13,8 @@ const copyText = (evt) => {
     })
     .catch(err => console.log(err));
   } else {
-    alert('Промокод скопирован!');
+    alert('Ваш браузер не поддерживает функцию быстрого копирования содержимого, скопируйте промокод вручную' + target.value);
   }
-  
 
   function popupHidden() {
     setTimeout(() => {
@@ -26,5 +23,6 @@ const copyText = (evt) => {
     }, 1000);
   }
 }
+
 
 if (btnsCopy.length) btnsCopy.forEach(btn => btn.addEventListener('click', copyText));
