@@ -5,8 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Black Friday</title>
   <meta name="description" content="Лига Героев, Черная пятница">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MQNBCMJ');</script>
+  <!-- End Google Tag Manager -->
+
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQNBCMJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <main class="main">
 
@@ -38,13 +51,13 @@
         </div>
         <div class="sale__timer timer">
           <div class="timer__section">
-            <div class="days_1" data-days="first">4</div>
-            <div class="days_2" data-days="second">8</div>
+            <div class="days_1" data-days="first">0</div>
+            <div class="days_2" data-days="second">0</div>
           </div>
           <div class="timer__delimetr" data-delimetr="tick">:</div>
           <div class="timer__section">
-            <div class="hours_1" data-hours="first">3</div>
-            <div class="hours_2" data-hours="second">6</div>
+            <div class="hours_1" data-hours="first">0</div>
+            <div class="hours_2" data-hours="second">0</div>
           </div>
           <div class="timer__delimetr" data-delimetr="tick">:</div>
           <div class="timer__section">
@@ -55,43 +68,51 @@
       </section>
 
       <section class="activity">
-        <h2 class="activity__title">Скидка <span class="colorized-text">20%</span> на мероприятия:</h2>
-        <div class="activity__filter filter">
-          <span class="filter__sub">Фильтр по мероприятиям:</span>
-          <ul class="filter__list">
-            <li>
-              <input class="visually-hidden filter__radio" id="filter-racehero" type="radio" name="filter" data-filter-btn="racehero">
-              <label class="filter__btn" for="filter-racehero">
-                <img class="filter__img filter__img--racehero" width="111" height="57" src="assets/images/logo-racehero.svg" alt="фильтр Гонка Героев">
-              </label>
-            </li>
-            <li>
-              <input class="visually-hidden filter__radio" id="filter-arena" type="radio" name="filter" data-filter-btn="arena">
-              <label class="filter__btn" for="filter-arena">
-                <img class="filter__img filter__img--arena" width="77" height="68" src="assets/images/logo-arena.svg" alt="фильтр Арена Героев">
-              </label>
-            </li>
-            <li class="filter__order">
-              <input class="visually-hidden filter__radio" id="filter-games" type="radio" name="filter" data-filter-btn="games">
-              <label class="filter__btn" for="filter-games">
-                <img class="filter__img filter__img--games" width="175" height="53" src="assets/images/logo-herogames.svg" alt="фильтр Игры Героев">
-              </label>
-            </li>
-            <li>
-              <input class="visually-hidden filter__radio" id="filter-letape" type="radio" name="filter" data-filter-btn="letape">
-              <label class="filter__btn" for="filter-letape">
-                <img class="filter__img filter__img--letape" width="92" height="63" src="assets/images/logo-letape.svg" alt="фильтр Letape">
-              </label>
-            </li>
-            <li>
-              <input class="visually-hidden filter__radio" id="filter-run" type="radio" name="filter" data-filter-btn="run">
-              <label class="filter__btn" for="filter-run">
-                <img class="filter__img filter__img--run" width="120" height="59" src="assets/images/race-hash.svg" alt="фильтр Забег">
-              </label>
-            </li>
-          </ul>
+        <div class="activity__pos-block">
+          <div class="activity__wrapper">
+            <h2 class="activity__title">Скидка <span class="colorized-text">20%</span> на мероприятия:</h2>
+            <div class="activity__reset-btn">
+              <input class="visually-hidden filter__radio" id="filter-all" type="radio" name="filter" data-reset="filter" checked>
+              <label class="activity__reset btn" for="filter-all">Сбросить фильтры</label>
+            </div>
+          </div>
+          <div class="activity__filter filter">
+            <span class="filter__sub">Фильтр по мероприятиям:</span>
+            <ul class="filter__list">
+              <li>
+                <input class="visually-hidden filter__radio" id="filter-racehero" type="radio" name="filter" data-filter-btn="racehero">
+                <label class="filter__btn" for="filter-racehero">
+                  <img class="filter__img filter__img--racehero" width="111" height="57" src="assets/images/logo-racehero.svg" alt="фильтр Гонка Героев">
+                </label>
+              </li>
+              <li>
+                <input class="visually-hidden filter__radio" id="filter-arena" type="radio" name="filter" data-filter-btn="arena">
+                <label class="filter__btn" for="filter-arena">
+                  <img class="filter__img filter__img--arena" width="77" height="68" src="assets/images/logo-arena.svg" alt="фильтр Арена Героев">
+                </label>
+              </li>
+              <li>
+                <input class="visually-hidden filter__radio" id="filter-games" type="radio" name="filter" data-filter-btn="games">
+                <label class="filter__btn" for="filter-games">
+                  <img class="filter__img filter__img--games" width="175" height="53" src="assets/images/logo-herogames.svg" alt="фильтр Игры Героев">
+                </label>
+              </li>
+              <!-- <li>
+                <input class="visually-hidden filter__radio" id="filter-letape" type="radio" name="filter" data-filter-btn="letape">
+                <label class="filter__btn" for="filter-letape">
+                  <img class="filter__img filter__img--letape" width="92" height="63" src="assets/images/logo-letape.svg" alt="фильтр Letape">
+                </label>
+              </li> -->
+              <li class="filter__order">
+                <input class="visually-hidden filter__radio" id="filter-run" type="radio" name="filter" data-filter-btn="run">
+                <label class="filter__btn" for="filter-run">
+                  <img class="filter__img filter__img--run" width="120" height="59" src="assets/images/race-hash.svg" alt="фильтр Забег">
+                </label>
+              </li>
+            </ul>
+          </div>
         </div>
-        
+
         <ul class="activity__list" data-filter-block="racehero">
           <li class="activity__item" data-filter-block="racehero">
             <img class="activity__img" width="84" height="42" src="assets/images/logo-winter.svg" alt="Лого Мероприятия">
@@ -103,29 +124,6 @@
               <a class="btn btn--href" href="https://heroleague.ru/?buy=461395" target="_blank" rel="noopener">Принять участие</a>
               <a class="btn btn--project" href="https://heroleague.ru/race/" target="_blank" rel="noopener">О проекте</a>
             </div>
-          </li>
-          <li class="activity__fix" data-filter-block="racehero">
-            <!-- <img class="activity__img" width="84" height="42" src="assets/images/logo-racehero.svg" alt="Лого Мероприятия">
-            <b class="activity__subtitle">24 апреля</b>
-            <h3 class="activity__city">Москва</h3>
-            <span class="activity__sale">20% скидка</span>
-            <button class="btn btn--promo" type="button" value="HERO21">Промокод:&nbsp;<span>HERO21</span></button>
-            <div class="activity__btns">
-              <a class="btn btn--href" href="https://heroleague.ru/?buy=461395" target="_blank" rel="noopener">Принять участие</a>
-              <a class="btn btn--project" href="https://heroleague.ru/race/" target="_blank" rel="noopener">О проекте</a>
-            </div> -->
-          </li>
-          <li class="activity__fix" data-filter-block="racehero">
-            <!-- activity__item activity__item--3 -->
-            <!-- <img class="activity__img" width="84" height="42" src="assets/images/logo-racehero.svg" alt="Лого Мероприятия">
-            <b class="activity__subtitle">5 июня</b>
-            <h3 class="activity__city">Самара</h3>
-            <span class="activity__sale">20% скидка</span>
-            <button class="btn btn--promo" type="button" value="HERO21">Промокод:&nbsp;<span>HERO21</span></button>
-            <div class="activity__btns">
-              <a class="btn btn--href" href="/">Принять участие</a>
-              <a class="btn btn--project" href="/">О проекте</a>
-            </div> -->
           </li>
           <li class="activity__item activity__item--4" data-filter-block="racehero">
             <img class="activity__img" width="84" height="42" src="assets/images/logo-racehero.svg" alt="Лого Мероприятия">
@@ -266,7 +264,7 @@
               <a class="btn btn--href" href="https://heroleague.ru/?buy=374301" target="_blank" rel="noopener">Принять участие</a>
             </div>
           </li>
-          <li class="activity__item proj proj--3" data-filter-block="letape">
+          <!-- <li class="activity__item proj proj--3" data-filter-block="letape">
             <img class="activity__img" width="69" height="61" src="assets/images/letape-rus-min.png" alt="Лого мероприятия">
             <h3 class="activity__city activity__city--sec">Москва</h3>
             <span class="activity__sale activity__sale--sec">20% скидка</span>
@@ -275,8 +273,8 @@
               <button class="activity__btn activity__btn--sec btn btn--promo" type="button" value="LETAPE21">Промокод: LETAPE21</button>
               <a class="btn btn--href" href="#">Принять участие</a>
             </div>
-          </li>
-          <li class="activity__item proj proj--4" data-filter-block="letape">
+          </li> -->
+          <!-- <li class="activity__item proj proj--4" data-filter-block="letape">
             <img class="activity__img" width="69" height="61" src="assets/images/letape-rus-min.png" alt="Лого мероприятия">
             <h3 class="activity__city activity__city--sec activity__city--spb">Санкт-Петербург</h3>
             <span class="activity__sale activity__sale--sec">20% скидка</span>
@@ -285,7 +283,7 @@
               <button class="activity__btn activity__btn--sec btn btn--promo" type="button" value="LETAPE21">Промокод: LETAPE21</button>
               <a class="btn btn--href" href="#">Принять участие</a>
             </div>
-          </li>
+          </li> -->
         </ul>
       </section>
 

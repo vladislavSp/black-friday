@@ -24,5 +24,4 @@ const copyText = (evt) => {
   }
 }
 
-
-// if (btnsCopy.length) btnsCopy.forEach(btn => btn.addEventListener('click', copyText));
+if (btnsCopy.length) btnsCopy.forEach(btn => btn.addEventListener('click', copyText));

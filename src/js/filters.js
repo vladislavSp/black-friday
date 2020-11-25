@@ -1,11 +1,14 @@
 const btnsFilter = [...document.querySelectorAll('*[data-filter-btn]')];
 const blocks = [...document.querySelectorAll('[data-filter-block]')];
+const resetFilterBtn = document.querySelector('[data-reset="filter"]');
 
 if (btnsFilter.length) {
-  btnsFilter.forEach((btn) => {
-    btn.checked = false;
-    btn.addEventListener('click', filterActivity)
-  });
+  resetFilterBtn.checked = true;
+  btnsFilter.forEach((btn) => btn.addEventListener('click', filterActivity));
+}
+
+if (resetFilterBtn) {
+  resetFilterBtn.addEventListener('click', resetFilter);
 }
 
 function filterActivity() {
@@ -20,4 +23,8 @@ function visibleBlocks(filter) {
       block.setAttribute('data-vis', true);
     }
   });
+}
+
+function resetFilter() {
+  blocks.forEach(el => el.setAttribute('data-vis', ''));
 }
