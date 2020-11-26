@@ -31,7 +31,7 @@
 
 .activity__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-template-columns: repeat(12, 1fr);
   gap: 1.5rem;
   row-gap: 2.5rem;
 
@@ -40,7 +40,12 @@
   }
 }
 
+li[data-vis="false"] {
+  display: none;
+}
+
 .activity__item {
+  grid-column: auto / span 4;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -51,7 +56,7 @@
   background-image: url('../assets/images/wint1x.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url('../assets/images/wint2x.jpg');
@@ -145,21 +150,18 @@
     }
   }
 
-  &--two {
-    grid-column: auto / span 2;
+  &--sec {
+    grid-column: auto / span 3;
   }
-}
 
-.proj {
-  &--1 {
+  &--arena {
     background-image: url('../assets/images/act4-1x.jpg');
-
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url('../assets/images/act4-2x.jpg');
     }
   }
 
-  &--2 {
+  &--games {
     background-image: url('../assets/images/act5-1x.jpg');
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -167,27 +169,36 @@
     }
   }
 
-  &--3 {
-    background-image: url('../assets/images/act6-1x.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/act6-2x.jpg');
-    }
-  }
-
-  &--4 {
-    background-image: url('../assets/images/act7-1x.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/act7-2x.jpg');
-    }
-  }
-
   &--merch {
+    grid-column: auto / span 6;
     background-image: url('../assets/images/merch1x.jpg');
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url('../assets/images/merch2x.jpg');
+    }
+  }
+
+  &--camp1 {
+    background-image: url('../assets/images/camp1x-1.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../assets/images/camp2x-1.jpg');
+    }
+  }
+
+  &--camp2 {
+    background-image: url('../assets/images/camp1x-2.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../assets/images/camp2x-2.jpg');
+    }
+  }
+
+  &--camp3 {
+    background-image: url('../assets/images/camp1x-3.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../assets/images/camp2x-3.jpg');
     }
   }
 }
@@ -217,7 +228,7 @@
   margin-bottom: 1.25rem;
 
   &--sec {
-    margin-bottom: 1.25rem;
+    font-size: 2.5rem;
   }
 
   &--camp {
@@ -266,16 +277,14 @@
 
 @media (max-width: 1199px) {
   .activity__list {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-
-    &--sec {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .activity__item {
-    &--two {
-      grid-column: auto / span 1;
+    grid-column: auto;
+
+    &--merch {
+      grid-column: auto;
     }
   }
 
@@ -339,14 +348,31 @@
   .activity__item {
     padding: 1.25rem 0.625rem 1rem;
     min-height: 15.3125rem;
+
+    &--merch, &--camp1 {
+      grid-column: auto / span 2;
+      min-height: 20rem;
+    }
+
+    &--camp1 {
+      min-height: 22.625rem;
+    }
   }
 
   .activity__img {
     width: 3.5rem;
+
+    &--merch {
+      margin-bottom: 1rem;
+    }
+
+    &--sec {
+      margin-bottom: 0.625rem;
+    }
   }
 
   .activity__subtitle {
-    font-size: 0.875rem;
+    font-size: 0.625rem;
   }
 
   .activity__city {
@@ -358,6 +384,20 @@
     &--spb {
       word-break: normal;
     }
+
+    &--sec {
+      word-break: break-word;
+    }
+
+    &--merch {
+      font-size: 3rem;
+      margin-bottom: 1.25rem;
+    }
+
+    &--camp1 {
+      font-size: 2.5rem;
+      word-break: break-word;
+    }
   }
 
   .activity__sale {
@@ -368,6 +408,10 @@
 
     &--banner {
       margin-left: -1.5rem;
+    }
+
+    &--merch {
+      margin-bottom: auto;
     }
   }
 
