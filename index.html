@@ -70,7 +70,7 @@
       <section class="activity">
         <div class="activity__pos-block">
           <div class="activity__wrapper">
-            <h2 class="activity__title">Скидка <span class="colorized-text">20%</span> на мероприятия:</h2>
+            <h2 class="activity__title">Скидка до <span class="colorized-text">20%</span> на мероприятия:</h2>
             <div class="activity__reset-btn">
               <input class="visually-hidden filter__radio" id="filter-all" type="radio" name="filter" data-reset="filter" checked>
               <label class="activity__reset btn" for="filter-all">Сбросить фильтры</label>
@@ -103,16 +103,16 @@
                   <img class="filter__img filter__img--run" width="120" height="59" src="assets/images/race-hash.svg" alt="фильтр Забег">
                 </label>
               </li>
-              <li>
+              <!-- <li>
                 <input class="visually-hidden filter__radio" id="filter-camp" type="radio" name="filter" data-filter-btn="camp">
                 <label class="filter__btn" for="filter-camp">
                   <img class="filter__img filter__img--camp" width="92" height="63" src="assets/images/camp.svg" alt="фильтр Camp">
                 </label>
-              </li>
+              </li> -->
               <li>
                 <input class="visually-hidden filter__radio" id="filter-merch" type="radio" name="filter" data-filter-btn="merch">
                 <label class="filter__btn" for="filter-merch">
-                  <img class="filter__img filter__img--merch" width="92" height="63" src="assets/images/merch.svg" alt="фильтр Shop">
+                  <img class="filter__img filter__img--merch" width="92" height="63" src="assets/images/logo-lh.svg" alt="фильтр Shop">
                 </label>
               </li>
             </ul>
@@ -252,8 +252,9 @@
         <ul class="activity__list activity__list--sec">
           <li class="activity__item proj proj--1" data-filter-block="arena">
             <img class="activity__img" width="69" height="61" src="assets/images/logo-arena.svg" alt="Лого мероприятия">
+            <b class="activity__subtitle">23 мая - 2 июня</b>
             <h3 class="activity__city activity__city--sec">Москва</h3>
-            <span class="activity__sale activity__sale--sec">20% скидка</span>
+            <span class="activity__sale">20% скидка</span>
             <div class="activity__btns activity__btns--sec">
               <a class="activity__btn activity__btn--sec btn btn--project" href="https://heroleague.ru/arena/ru/" target="_blank" rel="noopener">О проекте</a>
               <button class="activity__btn activity__btn--sec btn btn--promo" type="button" value="ARENA21">Промокод: ARENA21</button>
@@ -262,14 +263,25 @@
           </li>
           <li class="activity__item proj proj--2" data-filter-block="games">
             <img class="activity__img" width="130" height="40" src="assets/images/logo-herogames.svg" alt="Лого мероприятия">
+            <b class="activity__subtitle">12 декабря 2020</b>
             <h3 class="activity__city activity__city--sec">Москва</h3>
-            <span class="activity__sale activity__sale--sec">20% скидка</span>
+            <span class="activity__sale">20% скидка</span>
             <div class="activity__btns activity__btns--sec">
               <a class="activity__btn activity__btn--sec btn btn--project" href="https://games.heroleague.ru/" target="_blank" rel="noopener">О проекте</a>
               <button class="activity__btn activity__btn--sec btn btn--promo" type="button" value="IGRA20">Промокод: IGRA20</button>
               <a class="btn btn--href" href="https://heroleague.ru/?buy=374301" target="_blank" rel="noopener">Принять участие</a>
             </div>
           </li>
+          <li class="activity__item proj proj--merch activity__item--two" data-filter-block="merch">
+            <img class="activity__img" width="69" height="61" src="assets/images/logo-lh.svg" alt="Лого Магазина">
+            <h3 class="activity__city activity__city--sec">Фирменный мерч</h3>
+            <span class="activity__sale">скидки до 70%</span>
+            <div class="activity__btns activity__btns--sec">
+              <a class="btn btn--href" href="https://heroleague.ru/shop/" target="_blank" rel="noopener">Купить мерч</a>
+            </div>
+          </li>
+        </ul>
+        <!-- <ul class="activity__list">
           <li class="activity__item proj proj--3" data-filter-block="camp">
             <img class="activity__img" width="69" height="61" src="assets/images/camp.svg" alt="Лого Camp">
             <h3 class="activity__city activity__city--sec activity__city--camp">Сочи, Роза - Хутор</h3>
@@ -300,17 +312,7 @@
               <a class="btn btn--href" href="#"  target="_blank" rel="noopener">Принять участие</a>
             </div>
           </li>
-          <li class="activity__item proj proj--4" data-filter-block="merch">
-            <img class="activity__img" width="69" height="61" src="assets/images/merch.svg" alt="Лого Магазина">
-            <h3 class="activity__city activity__city--sec">Shop</h3>
-            <span class="activity__sale activity__sale--sec">скидки до 70%</span>
-            <div class="activity__btns activity__btns--sec">
-              <a class="activity__btn activity__btn--sec btn btn--project" href="https://heroleague.ru/"  target="_blank" rel="noopener">О проекте</a>
-              <!-- <button class="activity__btn activity__btn--sec btn btn--promo" type="button" value="LETAPE21">Промокод: LETAPE21</button> -->
-              <a class="btn btn--href" href="https://heroleague.ru/shop/" target="_blank" rel="noopener">Принять участие</a>
-            </div>
-          </li>
-        </ul>
+        </ul> -->
       </section>
 
       <footer class="footer">

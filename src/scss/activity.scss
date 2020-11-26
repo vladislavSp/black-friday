@@ -144,6 +144,10 @@
       background-image: url('../assets/images/act16-2x-min.jpg');
     }
   }
+
+  &--two {
+    grid-column: auto / span 2;
+  }
 }
 
 .proj {
@@ -176,6 +180,14 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url('../assets/images/act7-2x.jpg');
+    }
+  }
+
+  &--merch {
+    background-image: url('../assets/images/merch1x.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../assets/images/merch2x.jpg');
     }
   }
 }
@@ -261,6 +273,12 @@
     }
   }
 
+  .activity__item {
+    &--two {
+      grid-column: auto / span 1;
+    }
+  }
+
   .activity__city {
     font-size: 2.5rem;
   }
@@ -270,6 +288,12 @@
   .activity__list {
     &--sec {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .activity__item {
+    &--two {
+      grid-column: auto / span 2;
     }
   }
 
