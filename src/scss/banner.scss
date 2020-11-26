@@ -6,13 +6,13 @@
   position: relative;
   border-radius: 1rem;
   padding: 1.875rem;
-  background-image: url('../assets/images/banner-1x.jpg');
+  background-image: url('../assets/images/11@2x-min.png');
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url('../assets/images/banner-2x.jpg');
-  }
+  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //   background-image: url('../assets/images/banner-2x.jpg');
+  // }
 }
 
 .banner__title {

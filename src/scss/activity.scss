@@ -53,153 +53,79 @@ li[data-vis="false"] {
   padding: 1.75rem 1.75rem 1.875rem 1.25rem;
 
   border-radius: 1rem;
-  background-image: url('../assets/images/wint1x.jpg');
+  background-image: url('../assets/images/1@2x-min.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url('../assets/images/wint2x.jpg');
-  }
-
   &--2 {
-    background-image: url('../assets/images/act2-1x.jpg');
+    background-image: url('../assets/images/2@2x-min.png');
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/act2-2x.jpg');
-    }
+    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    //   background-image: url('../assets/images/act2-2x.jpg');
+    // }
   }
 
   &--3 {
-    background-image: url('../assets/images/act3-1x.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/act3-2x.jpg');
-    }
+    background-image: url('../assets/images/3@2x-min.png');
   }
 
   &--4 {
-    background-image: url('../assets/images/act8-1x-min.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/act8-2x-min.jpg');
-    }
+    background-image: url('../assets/images/4@2x-min.png');
   }
 
   &--5 {
-    background-image: url('../assets/images/act9-1x-min.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/act9-2x-min.jpg');
-    }
+    background-image: url('../assets/images/5@2x-min.png');
   }
 
   &--6 {
-    background-image: url('../assets/images/act10-1x-min.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/act10-2x-min.jpg');
-    }
+    background-image: url('../assets/images/6@2x-min.png');
   }
 
   &--7 {
-    background-image: url('../assets/images/act11-1x-min.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/act11-2x-min.jpg');
-    }
+    background-image: url('../assets/images/7@2x-min.png');
   }
 
   &--8 {
-    background-image: url('../assets/images/act12-1x-min.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/act12-2x-min.jpg');
-    }
+    background-image: url('../assets/images/8@2x-min.png');
   }
 
   &--9 {
-    background-image: url('../assets/images/act13-1x-min.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/act13-2x-min.jpg');
-    }
+    background-image: url('../assets/images/9@2x-min.png');
   }
 
   &--10 {
-    background-image: url('../assets/images/act14-1x-min.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/act14-2x-min.jpg');
-    }
+    background-image: url('../assets/images/10@2x-min.png');
   }
 
-  &--11 {
-    background-image: url('../assets/images/act15-1x-min.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/act15-2x-min.jpg');
-    }
-  }
-
-  &--12 {
-    background-image: url('../assets/images/act16-1x-min.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/act16-2x-min.jpg');
-    }
-  }
 
   &--sec {
     grid-column: auto / span 3;
   }
 
   &--arena {
-    background-image: url('../assets/images/act4-1x.jpg');
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/act4-2x.jpg');
-    }
+    background-image: url('../assets/images/12@2x-min.png');
   }
 
   &--games {
-    background-image: url('../assets/images/act5-1x.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/act5-2x.jpg');
-    }
+    background-image: url('../assets/images/13@2x-min.png');
   }
 
   &--merch {
     grid-column: auto / span 6;
-    background-image: url('../assets/images/merch1x.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/merch2x.jpg');
-    }
+    background-image: url('../assets/images/14@2x-min.png');
   }
 
   &--camp1 {
-    background-image: url('../assets/images/camp1x-1.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/camp2x-1.jpg');
-    }
+    background-image: url('../assets/images/16@2x-min.png');
   }
 
   &--camp2 {
-    background-image: url('../assets/images/camp1x-2.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/camp2x-2.jpg');
-    }
+    background-image: url('../assets/images/15@2x-min.png');
   }
 
   &--camp3 {
-    background-image: url('../assets/images/camp1x-3.jpg');
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../assets/images/camp2x-3.jpg');
-    }
+    background-image: url('../assets/images/17@2x-min.png');
   }
 }
 
@@ -303,6 +229,10 @@ li[data-vis="false"] {
   .activity__item {
     &--two {
       grid-column: auto / span 2;
+    }
+
+    &--camp2, &--camp3 {
+      order: 1;
     }
   }
 
