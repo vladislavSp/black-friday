@@ -200,6 +200,9 @@ li[data-vis="false"] {
   }
 }
 
+.activity__mobile-def {
+  display: none;
+}
 
 @media (max-width: 1199px) {
   .activity__list {
@@ -245,6 +248,11 @@ li[data-vis="false"] {
 @media (max-width: 767px) {
   .activity {
     padding-bottom: 2.75rem;
+  }
+
+  .activity__mobile-def {
+    display: inline;
+    opacity: 0;
   }
 
   .activity__pos-block {
@@ -328,6 +336,22 @@ li[data-vis="false"] {
       font-size: 2.5rem;
       word-break: break-word;
     }
+
+    &--break {
+      font-size: 1.375rem;
+    }
+
+    &--ns {
+      max-width: 6rem;
+    }
+
+    &--vs {
+      max-width: 7rem;
+    }
+
+    &--eb {
+      max-width: 7.2rem;
+    }
   }
 
   .activity__sale {
@@ -348,5 +372,13 @@ li[data-vis="false"] {
   .activity__btns {
     margin: 0;
     width: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .activity__city {
+    &--merch {
+      font-size: 2.6rem;
+    }
   }
 }
